@@ -1,0 +1,82 @@
+.btn {
+    border: 1px solid white;
+    padding: 2rem;
+    color: white;
+    text-decoration: none;
+    background: none;
+    transition: all .3s;
+    
+    &:hover,
+    &:active {
+            @include hoverBtnLight
+        }
+    
+    &--dark {
+        border: 1px solid black;
+        color: black;
+        transition: all .3s;
+        
+        &:hover,
+        &:active {
+            @include hoverBtnDark
+        }
+    }
+    
+    &--scroll {
+        padding: 1rem;
+        margin-top: 6rem;
+        display: inline-block;
+        border: 1px solid black;
+        color: black;
+        font-size: 1.4rem;
+        
+        @include respond(tab-port) {
+            display: none;
+        }
+    }
+    
+    &--home-cta {
+        font-size: 1.8rem;
+        display: inline-block;
+        margin-bottom: 4rem;
+        transition: all .2s;
+        
+        &:hover,
+        &:active {
+            @include hoverBtnLight
+        }
+    }
+    
+    &--send {
+        color: $primary-black;
+        background: none;
+        border-color: $primary-black;
+        font-size: 2.4rem;
+        width: 75%;
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        font-weight: 400;
+    }
+    
+    &--mr {
+        margin-right: 2rem;
+    }
+    
+    &--sm {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+    
+    &--long {
+        padding: 1rem 4rem;
+    }
+    
+    &--absBottom {
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}    
+    

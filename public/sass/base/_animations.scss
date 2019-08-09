@@ -1,0 +1,119 @@
+@keyframes expandMenu {
+    0% {
+       opacity: 0;
+       top: 0;
+       width: 100%;
+       height: 6.5rem;
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(200%);
+        width: 100%;
+        height: 6.5rem;
+    }
+    80% {
+        width: 100%;
+        opacity: 1;
+        transform: translateY(-50%);
+        height: 6.5rem;
+    }
+    100% {
+        width: 100%;
+        height: 101vh;
+        position: fixed;
+        opacity: 1;
+    }
+}
+
+@keyframes moveInItems {
+    0% {
+       margin-left: -50rem;
+       opacity: 0;
+    }
+    
+    80% {
+        margin-left: 10rem;
+        opacity: .9;
+    }
+    
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+    
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes closeMenu {
+    0% {
+        width: 100%;
+        height: 101vh;
+        position: fixed;
+        opacity: 1;
+    }
+    40% {
+        width: 100%;
+        opacity: 1;
+        transform: translateY(-50%);
+        height: 6.5rem;
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(200%);
+        width: 100%;
+        height: 6.5rem;
+    }
+    
+    99% {
+       opacity: 0;
+       height: 6.5rem;
+       width: 100%;
+    }
+    
+    100% {
+       opacity: 0;
+       width: 0;
+       height: 0;
+    }
+}
+
+@keyframes hideItems {
+    0% {
+        margin-left: 0;
+        opacity: 1;
+    }
+    
+    100% {
+        margin-left: -50rem;
+        opacity: 0;
+    }
+}
+
+@keyframes loadPage {
+    0% {
+        height: 100vh;
+    }
+    
+    100% {
+        width: 0;
+        height: 0;
+    }
+}

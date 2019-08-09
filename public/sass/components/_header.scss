@@ -1,0 +1,121 @@
+.header {
+    min-height: 100vh;
+    padding-top: 2rem;
+    text-align: center;
+    
+    @include respond(tab-port) {
+        padding-top: 0;
+    }
+    
+    &--home {
+        background: linear-gradient(
+        304.34deg, rgba($primary-black, 0.3) 71.33%,
+        rgba($primary-black, 0) 105.55%),
+        url(/img/home-header.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 25% 60%;
+        background-attachment: fixed;
+        
+        @include respond(tab-port){
+            background-attachment: scroll;
+        }
+    }
+    
+    &--standard {
+        @include respond(tab-port) {
+            min-height: 0;
+            padding-bottom: 8rem;
+        }
+    }
+    
+    &--small {
+        min-height: 0;
+        padding-top: 0;
+    }
+    
+    .nav {
+        @include navbar
+    }
+    
+    &__title {
+        font-size: 3.6rem;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 4rem;
+        
+         @include respond(tab-port) {
+            width: 80%;
+            margin: 8rem auto 2rem auto;
+        }
+        
+        @include respond(phone) {
+            width: 90%;
+            margin: 8rem auto 2rem auto;
+        }
+        
+        &--pt {
+            padding-top: 4rem;
+        }
+    }
+    
+    &__text {
+        font-size: 2.4rem;
+        text-align: left;
+        
+        @include respond(tab-port) {
+            width: 80%;
+            margin: 2rem auto;
+        }
+        
+        &--centered {
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+            
+            @include respond(phone) {
+                font-size: 2.4rem;
+                width: 90%;
+            }
+        }
+    }    
+    
+    &__logo {
+        display: block;
+        margin: 15vh auto;
+        z-index: 1;
+        
+        @include respond(tab-port){
+            margin: 10vh auto;
+            height: 20rem;
+            width: 30rem;
+        }
+        
+        @include respond(phone){
+            height: 15rem;
+            width: 25rem;
+        }
+    }
+    
+    &__btn-container {
+        margin-top: 4rem;
+        
+        @include respond(phone) {
+            
+            .btn {
+                display: block;
+                width: 80%;
+                margin: 2rem auto !important;
+            }
+        }
+    }
+    
+    .go-down {
+       position: absolute;
+       left: 49%;
+       transform: translateX(-49%);
+       bottom: 10%;
+       height: 3rem;
+       width: 3rem;
+    }
+}

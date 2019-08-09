@@ -1,0 +1,166 @@
+<% include ./partials/head %>
+
+    <header class="header header--home">
+       <% include ./partials/navbar %>
+        <img src="/img/Logo White.png" alt="" class="header__logo">
+        <a href="/hire" class="btn btn--home-cta">Let's Work Together</a>
+        
+        <!--<a href="#" class="go-down" id="nav__menu-btn">-->
+        <!--    <img src="/img/Arrow Down.svg"></img>-->
+        <!--</a>-->
+        
+    </header>
+
+    <section class="intro">
+        <div class="row">
+            <h1 class="intro__text">
+                J3L webDesign is an innovative, client-focused web design and development
+                company based out of Corpus Christi, Texas. We specialize in meeting the
+                needs of local small businesses to grow and maintain their online presence. 
+            </h1>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+        <div class="row">
+            <h2 class="testimonials__header">
+                What Our Clients Have to Say...
+            </h2>
+            <div class="col-1-of-3 testimonial">
+                <p class="testimonial__text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat."
+                </p>
+                <p class="testimonial__reference">
+                    <strong class="testimonial__reference-customer">-Carmen,</strong>
+                    <span class="testimonial__reference-business">Rockport Oaks RV Park</span>
+                </p>
+            </div>
+            <div class="col-1-of-3 testimonial">
+                <p class="testimonial__text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat."
+                </p>
+                <p class="testimonial__reference">
+                    <strong class="testimonial__reference-customer">-Cory,</strong>
+                    <span class="testimonial__reference-business">Mammoth Training Center</span>
+                </p>
+            </div>
+            <div class="col-1-of-3 testimonial">
+                <p class="testimonial__text">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat."
+                </p>
+                <p class="testimonial__reference">
+                    <strong class="testimonial__reference-customer">-Nora,</strong>
+                    <span class="testimonial__reference-business">Community of Faith</span>
+                </p>
+            </div>
+        </div>
+        <a href="/portfolio" class="btn btn--long">See Our Recent Projects</a>
+    </section>
+    
+    <section class="features">
+        <div class="row">
+            <h2 class="features__header">
+                What We Do
+            </h2>
+            <div class="col-1-of-4">
+                <div class="card">
+                    <svg class="card__icon icon icon-checkmark2">
+                        <use xlink:href="#icon-checkmark"></use>
+                    </svg>
+                    <h3 class="card__header">
+                        We Do Simple
+                    </h3>
+                    <p class="card__body">
+                        Not every business needs all the bells and whistles.
+                        Tell us about your business, your clients, and your goals,
+                        and we can match you with the product tier that is right for you.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-1-of-4">
+                <div class="card">
+                    <svg class="card__icon icon icon-equalizer">
+                        <use xlink:href="#icon-equalizer"></use>
+                    </svg>
+                    <h3 class="card__header">
+                        We Give you Control
+                    </h3>
+                    <p class="card__body">
+                        Our Content Management service gives you the ability to make live edits to your website, 
+                        so your content is alway relevent. 
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-1-of-4">
+                <div class="card">
+                    <svg class="card__icon icon icon-users">
+                        <use xlink:href="#icon-users"></use>
+                    </svg>
+                    <h3 class="card__header">
+                        We Stay Involved
+                    </h3>
+                    <p class="card__body">
+                       We understand small businesses because we are one. 
+                       If you need help managing your site once it’s live, our maintenance package ensures we are always just a phone call away.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-1-of-4">
+                <div class="card">
+                    <svg class="card__icon icon icon-wrench">
+                        <use xlink:href="#icon-wrench"></use>
+                    </svg>
+                    <h3 class="card__header">
+                        We Solve Problems
+                    </h3>
+                    <p class="card__body">
+                        We pride ourselves in our ability to develop custom solutions to meet your business needs.
+                        We can add custom features and functionality to make your website work for you.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="u-text-center">
+            <a href="/products" class="btn btn--dark btn--long">See All Our Products</a>
+        </div>
+    </section>
+    
+    <section class="home-contact">
+        <div class="row">
+            <div class="form-container u-float-left">
+                <h2 class="form-heading">
+                    Contact Us
+                </h2>
+                <form action="/inquiries/home" method="POST" class="form">
+                    <input type="text" name="name" placeholder="Your Name" class="form__input">
+                    <input type="text" name="business" placeholder="Your Business or Product" class="form__input">
+                    <input type="text" name="phone" placeholder="Phone Number" class="form__input">
+                    <input type="text" name="email" placeholder="Email" class="form__input">
+                    <label for="message" class="form__label">
+                        Tell Us What You Need:
+                    </label>
+                    <textarea class="form__textarea" name="message"></textarea>
+                    <button class="btn btn--send">Send</button>
+                </form>
+            </div>
+            <div class="info u-float-right">
+                <img src="/img/Logo White.png" alt="J3L webDesign Logo in a white border" class="info__logo">
+                <a class="u-phone info__phone"href="tel:1-361-462-1904">361-462-1904</a>
+                <p class="info__email">Info@J3LwebDesign.com</p>
+            </div>
+        </div>
+    </section>
+    
+<% include ./partials/footer %>    

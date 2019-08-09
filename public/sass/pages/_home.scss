@@ -1,0 +1,278 @@
+.intro {
+    padding: 20vh 0;
+    width: 45%;
+    margin: 0 auto;
+    
+    @include respond(tab-land) {
+        width: 60%;    
+    }
+    
+    @include respond(tab-port) {
+        width: 75%;    
+    }
+    
+     @include respond(phone-sm) {
+        width: 90%;    
+    }
+    
+    &__text {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+}
+
+.testimonials {
+    background-image: url(/img/dark-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $primary-white;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 30vh 0;
+    
+    @supports(clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+        -webkit-clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%);
+        clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%);
+    }
+    
+    @include respond(tab-port) {
+        -webkit-clip-path: none;
+        clip-path: none;
+        padding: 15vh 0;
+    }
+    
+    .btn {
+            margin-top: 4rem;
+            display: inline-block;
+        }
+    
+    
+    &__header {
+        font-weight: 400;
+        font-size: 3.6rem;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+    
+    .testimonial {
+        text-align: left;
+        
+        @include respond(tab-port) {
+            padding: 4rem 0;
+        }
+        
+        &__text {
+            font-size: 1.8rem;
+            line-height: 140%;
+        }
+        
+        &__reference {
+            width: 45%;
+            text-align: center;
+            margin-top: 1rem;
+            margin-left: 27.5%;
+            font-size: 1.6rem;
+            
+            &-customer {
+                font-weight: 500;
+            }
+            
+            &-business {
+                font-style: italic;
+                
+            }
+        }
+    }
+}
+
+.features {
+    padding: 20vh 0;
+    font-size: 1.6rem;
+    
+    @include respond(tab-port) {
+        padding: 15vh 0;
+    }
+    
+    &__header {
+        font-weight: 400;
+        font-size: 3.6rem;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+    
+    .btn {
+            margin-top: 4rem;
+            display: inline-block;
+        }
+    
+    .card {
+        padding: 0 .5rem;
+        
+        @include respond(tab-port) {
+            padding: 4rem 0;
+        }
+        
+        &__icon {
+            display: block;
+            height: 5rem;
+            width: 5rem;
+            margin: 0 auto 2rem auto;
+        }
+        
+        &__header {
+            font-weight: 400;
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+        
+        &__body {
+            font-size: 1.8rem;
+            line-height: 140%;
+        }
+        
+    }
+}
+
+.home-contact {
+    background-image: linear-gradient(
+    rgba($primary-black, 0.25),
+    rgba($primary-black, 0.25)),
+    url(/img/home-contact-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    padding: 20vh 0;
+    
+    @include respond(tab-land) {
+        padding: 20vh 4rem;
+    }
+    
+    @include respond(tab-port) {
+        padding: 20vh 0;
+    }
+    
+    .form-container {
+        width: 45%;
+        
+        @include respond(tab-port) {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+         @include respond(phone) {
+            width: 95%;
+        }
+        
+        .form-heading {
+            font-size: 3.6rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+        }
+        
+        .form {
+            
+            &__input {
+                display: block;
+                font-size: 1.8rem;
+                padding: 1rem;
+                background: none;
+                border: 0;
+                outline: 0;
+                border-radius: 0;
+                border-bottom: 1px solid black;
+                margin-bottom: 2rem;
+                font-family: 'Montserrat', sans-serif;
+                width: 75%;
+                
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+            }
+            
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+              color: $primary-black;
+              opacity: 1; /* Firefox */
+            }
+            
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+              color: $primary-black;
+            }
+            
+            ::-ms-input-placeholder { /* Microsoft Edge */
+              color: $primary-black;
+            }
+            
+            &__label {
+                display: block;
+                font-size: 1.8rem;
+                padding: 1rem;
+            }
+            
+            .btn {
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+            }
+            
+            &__textarea {
+                display: block;
+                font-family: 'Montserrat', sans-serif;
+                background: none;
+                outline: 0;
+                border-radius: 0;
+                border: 1px solid black;
+                width: 75%;
+                height: 20rem;
+                margin-bottom: 2rem;
+                
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .info {
+        width: 40%;
+        text-align: center;
+        font-size: 3.6rem;
+        
+        @include respond(tab-land) {
+            font-size: 2.9rem;
+        }
+        
+        @include respond(tab-port) {
+                width: 100%;
+                margin-top: 4rem;
+            }
+            
+        @include respond(phone-sm) {
+            font-size: 2rem;
+        }    
+        
+        &__logo {
+            margin-bottom: 1rem;
+            
+           @include respond(tab-land) {
+                height: 25rem;
+                width: 35rem;
+            }
+                    
+            @include respond(tab-port){
+                height: 15rem;
+                width: 25rem;
+            }
+        }
+        
+        &__phone {
+            display: block;
+            color: $primary-white;
+            margin-bottom: 1rem;
+        }
+        
+        &__email {
+            color: $primary-white;
+        }
+    }
+}

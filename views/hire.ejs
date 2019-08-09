@@ -1,0 +1,83 @@
+<% include ./partials/head %>
+
+<header class="header header--small u-pt u-text-center">
+   <% include ./partials/navbar %>
+   
+    <h1 class="header__title header__title--pt">
+        Hire Us
+    </h1>
+    
+    <p class="header__text header__text--centered">
+       Please fill out the form below and we will reach out to you soon to discuss your project 
+    </p>
+    
+    <div class="header__btn-container">
+        <a href="/information#info-product-section" class="btn btn--sm btn--dark btn--mr ">View Full Product Detail</a>
+        <a href="/information#info-terms-section" class="btn btn--sm btn--dark">View Terms and Conditions</a>
+    </div>
+</header>
+
+<section class="hire-us">
+    
+    <div class="form-container">
+        <form action="/inquiries/hire" method="POST" class="form">
+            <div class="row">
+                <div class="top-left">
+                    <input type="text" name="name" class="form__input" placeholder="Your Name"/>
+                    <input type="text" name="business" class="form__input" placeholder="Your Business or Product"/>
+                </div>
+                <div class="top-right">
+                    <input type="text" name="phone" class="form__input" placeholder="Phone Number"/>
+                    <input type="text" name="email" class="form__input" placeholder="Email"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="bottom-left">
+                <label for="message" class="form__label">Tell Us About Your Needs:</label>
+                <textarea class="form__textarea" name="message"></textarea>
+            </div>
+            <div class="bottom-right">
+                <h4 class="form__sub-heading">What Product Tier Are You Interested In?</h4>
+                
+                <div class="radio-container">
+                    <input type="radio" name="interest" value="Simple" required/>
+                    <label for="simple">Simple</label>
+                </div>
+                
+                <div class="radio-container">
+                    <input type="radio" name="interest" value="Standard" required/>
+                    <label for="standard">Standard</label>
+                </div>
+                
+                <div class="radio-container">
+                    <input type="radio" name="interest" value="Premium" required/>
+                    <label for="premium">Premium</label>
+                </div>
+                <div class="radio-container">
+                    <input type="radio" name="interest" value="Undecided" required/>
+                    <label for="undecided">Undecided</label>
+                </div>
+            </div>
+            </div>
+            <button class="btn btn--long btn--dark">Send</button>
+        </form>
+    </div>
+    <div class="fine-print">
+        <p class="disclaimer">
+            We are a low volume business that takes the time to devote ourselves to each
+            and every project we take on. Due to this, we may not be able to take on every
+            project requested. In the event of a backlog, we will be happy to add you to
+            our waiting list.
+        </p>
+        
+        <p class="required">
+            Before we can work together, you must review and agree to our <a href="/information#info-terms-section">Terms and Conditions</a>
+            and <a href="/information#info-requirements-section">Client Requirements</a>. You will be asked to sign a contract stating you are aware 
+            of this information once we have agreed upon the scope of your project.   
+        </p>
+    </div>
+    
+</section>
+
+
+<% include ./partials/footer %>

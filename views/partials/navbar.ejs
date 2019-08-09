@@ -1,0 +1,27 @@
+<nav class="nav nav--main">
+     <a href="/" class="nav__logo">
+        <img src="/img/nav-logo.png" alt="J3L Letter Logo" class="nav__logo-image">
+    </a>
+    
+    <a href="javascript:void(0)" class="nav__menu-btn" id="menu-open">
+        <svg shape-rendering="crispEdges" class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 54 54">
+            <g>
+                <path  d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+            </g>
+        </svg>
+    </a>
+</nav>
+
+<nav id="menu" class="expand">
+    <a href="javascript:void(0)" id="menu-close" class="expand__close">&times;</a>
+    <ul class="u-absCenter">
+        <li class="expand-item"><a href="/redirect">Home</a></li>
+        <li class="expand-item"><a href="/redirect/products">Products</a></li>
+        <li class="expand-item"><a href="/redirect/portfolio">Portfolio</a></li>
+        <li class="expand-item"><a href="/redirect/hire">Inquiries</a></li>
+    </ul>
+</nav>   
+
+<% if(fromMenu) { %>
+    <div id="load-animation" class="load-animation"></div>
+<% } %>

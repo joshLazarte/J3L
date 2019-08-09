@@ -1,0 +1,260 @@
+.product {
+    padding-bottom: 15%;
+    
+    @include respond(tab-land) {
+        min-height: 0;
+        padding: 0 2rem 6rem 2rem;
+    }
+    
+    @include respond(tab-port) {
+        padding: 6rem 2rem 6rem 2rem;
+    }
+    
+    &--dark {
+        background-image: url(/img/dark-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: $primary-white;
+    }
+    
+    .details {
+        width: 40%;
+        padding-top: 20%;
+        font-size: 1.6rem;
+        line-height: 150%;
+        
+        @include respond(tab-port) {
+            font-size: 1.8rem;
+            width: 100%;
+            padding-top: 10%;
+        }
+    }
+    
+    .demo {
+        width: 50%;
+        padding-top: 15%;
+        
+        @include respond(tab-port) {
+            width: 100%;
+            padding-top: 0;
+        }
+    }
+    
+    &__title {
+        font-weight: 400;
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    &__text {
+        margin-bottom: 2rem;
+    }
+    
+    &__list {
+        list-style-image: url("/img/list-style.svg");
+        margin-left: 4%;
+        
+         @include respond(phone) {
+               margin-left: 6%;
+            }
+        
+        &-item {
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+            
+            @include respond(tab-port) {
+                font-size: 1.6rem;
+            }
+          
+          &--dark {
+                list-style-image: url("/img/list-style-dark.svg");
+            }
+        }
+    }
+    
+    &__disclaimer {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    
+    &__image {
+        display: block;
+        margin: 0 auto;
+        width: 42rem;
+        height: 35rem;
+        
+        @include respond(tab-port) {
+            margin-top: 6rem;
+            width: auto;
+            height: 50vw;
+        }
+        
+        &--dark {
+            width: 45rem;
+            height: 35rem;
+            
+            @include respond(tab-port) {
+                margin-top: 6rem;
+                width: auto;
+                height: 50vw;
+            }
+        }
+    }
+    
+    &__btn-container {
+        font-size: 1.6rem;
+        margin-top: 6rem;
+        text-align: center;
+        
+        @include respond(tab-port) {
+            .btn {
+                padding: 1rem;
+                display: block;
+                width: 75%;
+                margin: 2rem auto;
+            }
+        }
+    }
+}
+
+.services {
+    line-height: 150%;
+    font-size: 1.6rem;
+    padding-bottom: 10%;
+    
+    @include respond(tab-land) {
+        padding: 0 2rem 4rem 2rem;
+    }
+    
+    .left-side {
+        width: 40%;
+        padding-top: 10%;
+        
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+    .addons {
+        margin-bottom: 6rem;
+    }
+    
+    .requirements {
+       
+    }
+    
+    .maintenance {
+        width: 40%;
+        padding-top: 20%;
+        
+        @include respond(tab-port) {
+            width: 100%;
+            padding-top: 10%;
+        }
+    }
+    
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+    
+    &__text {
+        margin-bottom: 2rem;
+    }
+    
+    &__list {
+        list-style-image: url("/img/list-style-dark.svg");
+        margin-left: 2%;
+        
+        @include respond(phone) {
+               margin-left: 4%;
+            }
+        
+        &-item {
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+            margin-left: 1rem;
+        }
+    }
+    
+    &__btn-container {
+        font-size: 1.4rem;
+        margin-top: 4rem;
+        
+        @include respond(tab-land) {
+            .btn {
+                display: block;
+                width: 80%;
+                margin: 2rem auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.value {
+    background-image: url(/img/dark-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $primary-white;
+    font-size: 1.6rem;
+    margin-bottom: -1rem;
+    padding-bottom: 10%;
+    
+    @include respond(tab-land) {
+        padding: 0 2rem 6rem 2rem;
+        min-height: 0;
+    }
+    
+    &__logo {
+        padding-top: 25%;
+        @include respond(tab-port) {
+                display: none;
+                padding-top: 0;
+                height: 0;
+                width: 0;
+            }
+        img {
+            display: block;
+        }
+    }
+    
+    .cta {
+        width: 45%;
+        padding-top: 20%;
+        line-height: 150%;
+        text-align: center;
+        
+        @include respond(tab-port) {
+            width: 100%;
+            padding-top: 15%;
+        }
+        
+        &__header {
+            font-size: 2.8rem;
+            line-height: 120%;
+            font-weight: 400;
+            margin-bottom: 3rem;
+            text-align: left;
+            
+            @include respond(phone) {
+                text-align: center;
+            }
+        }
+        
+        &__text {
+            margin-bottom: 3rem;
+            text-align: left;
+            
+            &:nth-of-type(2) {
+                margin-bottom: 6rem;
+            }
+        }
+        
+        .btn {
+            width: 75%;
+            display: block;
+        }
+    }
+}

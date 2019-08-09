@@ -1,0 +1,5 @@
+npm-debug.log
+.env
+notes.txt
+/public/css
+/public/javascript/dist

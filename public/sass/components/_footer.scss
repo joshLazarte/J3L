@@ -1,0 +1,60 @@
+.footer {
+    background-image: url(/img/dark-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8rem 4rem 4rem 4rem;
+    text-align: center;
+    font-size: 1.8rem;
+    color: $primary-white;
+    line-height: 150%;
+    z-index: 4;
+    position: relative;
+    &__logo {
+        display: block;
+        margin: 0 auto 2rem auto;
+    }
+    
+    &__phone {
+        color: $primary-white
+    }
+    
+    &__email {
+        margin-bottom: 2rem;
+    }
+    
+    &__list {
+        list-style: none;
+        font-size: 2rem;
+        &-item {
+            display: inline;
+            a {
+                text-decoration: none;
+                color: $primary-white;
+                transition: all .3s;
+                
+                &:hover,
+                &:active {
+                    @include menuItemHover
+                }
+            }
+        }
+    }
+    
+    &__copyright {
+        float: left;
+        font-size: 1.2rem;
+    }
+    
+    &__terms-and-conditions {
+        float: right;
+        font-size: 1.2rem;
+        a {
+            color: $primary-white;
+            
+           &:hover,
+            &:active {
+                @include menuItemHover
+            }
+        }
+    }
+}

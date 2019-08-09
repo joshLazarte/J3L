@@ -1,0 +1,117 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin navbar {
+    background-image: url(/img/nav-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90vw;
+    padding: 1rem;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    z-index: 10;
+    @include clearfix
+    
+    @include respond(tab-port) {
+        width: auto;
+        margin: 0;
+    }
+    
+    &--full {
+        width: 100%;
+        margin: 0;
+        position: fixed;
+    }
+    
+    &__logo {
+        margin-left: 3%;
+        &-image {
+            padding-top: .5rem;
+            height: 5rem;
+        }
+    }
+    
+    &__menu-btn {
+       float: right;
+       margin-right: 3%;
+       padding-top: 1rem;
+        .icon {
+            stroke-width: 0;
+            stroke: white;
+            fill: white; 
+            transition: all .3s;
+            
+             &:hover,
+             &:active {
+               stroke: $hover-gray-light;
+               fill: $hover-gray-light; 
+            }
+        }
+    }
+}
+
+@mixin hoverBtnDark {
+    background-color: $primary-black;
+    border-color: $primary-black;
+    color: $primary-white;
+}
+
+@mixin hoverBtnLight {
+    background-color: $primary-white;
+    border-color: $primary-white;
+    color: $primary-black;
+}
+
+@mixin menuItemHover {
+    color: $hover-gray-dark;
+}
+
+//media query manager
+/*
+      0-600px: phone
+  600 - 900px: tablet portrait
+ 900 - 1200px: tablet lansdcape
+1200 - 1800px: normal styles apply
+     1800px +: big desktop
+     
+breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desk
+
+ORDER: Base + typography > general layout > grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-sm {
+        @media only screen and (max-width: 25em) {@content}; //400px
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) {@content}; //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) {@content}; //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) {@content}; //1200px
+    }
+    @if $breakpoint == big-desk {
+        @media only screen and (min-width: 112.5em) {@content}; //1800px
+    }
+}

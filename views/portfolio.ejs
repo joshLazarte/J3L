@@ -1,0 +1,112 @@
+<% include ./partials/head %>
+
+    <header class="header header--standard">
+       <% include ./partials/navbar %>
+        
+        <span class="u-absCenter-md">
+            <h1 class="header__title">
+                Portfolio
+            </h1>
+            
+            <p class="header__text">
+               We’re proud of our work and the working relationships we've built with our clients. 
+               These are a few of the most recent projects we’ve had the privelage to work on. 
+            </p>
+            <a href="#" class="btn btn--scroll">Scroll to See More</a>
+        </span>
+    </header>
+    
+    <section id="portfolio" class="portfolio portfolio--dark u-hide-md">
+        <div class="row">
+            <div class="slider">
+                <a href="javascript:void(0)" id="arrow-left" class="slider__arrow-left"><img src="/img/Left Arrow.svg"></img></a>
+                <div class="gallery">
+                    <img src="/img/COF.png" alt="Community of Faith Website" id="cof" class="gallery__left">
+                    <img src="/img/Rockport Oaks.png" alt="Rockport Oaks RV Park Website" id="ro" class="gallery__selected">
+                    <img src="/img/Mammoth.png" alt="Mammoth Training Center Website" id="mammoth" class="gallery__right">
+                </div>
+                <a href="javascript:void(0)" id="arrow-right" class="slider__arrow-right"><img src="/img/Right Arrow.svg"></img></a>
+                <a target="_blank" href="http://104.248.73.201/" id="web-link" class="btn btn--long btn--absBottom">Go to Site</a>
+            </div>
+            
+            <div id="portfolio-content"></div>
+        </div>
+    </section>
+    
+    <section class="portfolio portfolio--dark u-show-md">
+        <div class="description">
+            <h2 class="description__title">Rockport Oaks RV Park</h2>
+            <p class="description__text">
+                Rockport Oaks is a luxury RV park development in Rockport, Texas. It provides residents with the unique opportunity to lease
+                or purchase thier own lot. Purchased lot's can then be rented out when the owner is not in town.
+            </p>
+        </div>
+        <div class="bullets">
+            <h3 class="bullets__heading">
+                Products and Features
+            </h3>
+            <ul class="bullets__list">
+                <li class="bullets__list-item">Standard Tier</li>
+                <li class="bullets__list-item">Content Management services</li>
+                <li class="bullets__list-item">Custom logo design</li>
+                <li class="bullets__list-item">Additional functionality to post, update, and arrange available lots</li>
+            </ul>
+            
+            <img src="/img/Rockport Oaks.png" alt="Rockport Oaks RV Park Website" id="ro" class="bullets__image">
+            
+            <a target="_blank" href="http://104.248.73.201/" class="btn btn--long btn--sm">Visit Site</a>
+            <a href="/hire" class="btn btn--long btn--sm">Get Started</a>
+        </div>
+    </section>
+    
+    <section class="portfolio u-show-md">
+        <div class="description">
+            <h2 class="description__title">Community of Faith</h2>
+            <p class="description__text">
+                Community of Faith is a Baptist church in Corpus Christi, Texas. They are family
+                oriented and driven by their love for God and all His children.
+            </p>
+        </div>
+        <div class="bullets">
+            <h3 class="bullets__heading">
+                Products and Features
+            </h3>
+            <ul class="bullets__list">
+                <li class="bullets__list-item">Premium Tier (Content Mangement service included for free)</li>
+                <li class="bullets__list-item">Custom built calendar widget to add and update church events</li>
+                <li class="bullets__list-item">Integrated YouTube channel to display sermons and other media</li>
+                <li class="bullets__list-item">Functionality to update personnel records and church ministries</li>
+            </ul>
+            <img src="/img/COF.png" alt="Community of Faith Website" id="cof" class="bullets__image">
+            <a target="_blank" href="https://wearecommunityoffaith.org" class="btn btn--long btn--dark btn--sm">Visit Site</a>
+            <a href="/hire" class="btn btn--long btn--dark btn--sm">Get Started</a>
+        </div>
+    </section>
+    
+    <section class="portfolio portfolio--dark u-show-md">
+        <div class="description">
+            <h2 class="description__title">Mammoth Training Center</h2>
+            <p class="description__text">
+                Mammoth Training Center is family owned and operated in Rockport, Texas. They specialize in 
+                Muay Thai, Strongman, Powerlifting, and general fitness. 
+            </p>
+        </div>
+        <div class="bullets">
+            <h3 class="bullets__heading">
+                Products and Features
+            </h3>
+            <ul class="bullets__list">
+                <li class="bullets__list-item">Standard Tier</li>
+                <li class="bullets__list-item">Custom homepage image slider</li>
+                <li class="bullets__list-item">reCaptcha form authentication</li>
+                <li class="bullets__list-item">Google maps platform integration</li>
+            </ul>
+            <img src="/img/Mammoth.png" alt="Mammoth Training Center Website" id="cof" class="bullets__image">
+            <a target="_blank" href="http://167.99.172.59" class="btn btn--long btn--sm">Visit Site</a>
+            <a href="/hire" class="btn btn--long btn--sm">Get Started</a>
+        </div>
+    </section>
+    
+    
+    
+<% include ./partials/footer %>     

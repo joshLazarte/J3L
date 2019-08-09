@@ -1,0 +1,319 @@
+<% include ./partials/head %>
+
+<header class="header header--small">
+    <nav class="nav nav--full">
+         <a href="/" class="nav__logo">
+            <img src="/img/nav-logo.png" alt="J3L Letter Logo" class="nav__logo-image">
+        </a>
+        
+        <a href="javascript:void(0)" class="nav__menu-btn" id="menu-open">
+            <svg shape-rendering="crispEdges" class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45" height="45" viewBox="0 0 54 54">
+                <g>
+                    <path  d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                </g>
+            </svg>
+        </a>
+        
+    </nav>
+    
+    <nav id="menu" class="expand">
+        <a href="javascript:void(0)" id="menu-close" class="expand__close">&times;</a>
+        <ul class="u-absCenter">
+            <li class="expand-item"><a href="/redirect">Home</a></li>
+            <li class="expand-item"><a href="/redirect/products">Products</a></li>
+            <li class="expand-item"><a href="/redirect/portfolio">Portfolio</a></li>
+            <li class="expand-item"><a href="/redirect/hire">Inquiries</a></li>
+        </ul>
+    </nav>   
+
+    <% if(fromMenu) { %>
+        <div id="load-animation" class="load-animation"></div>
+    <% } %>
+</header>    
+    
+<div class="information">
+    <nav id="sidebar" class="sidebar sidebar--responsive">
+        <ul id="sidebar__list" class="sidebar__list">
+            <li class="sidebar__list-item">
+                <a href="#">Product Information</a>
+            </li>
+            <li class="sidebar__list-item">
+                <a href="#">Terms and Conditions</a>
+            </li>
+            <li class="sidebar__list-item">
+                <a href="#">Client Requirements and Responsibilites</a>
+            </li>
+            <li class="sidebar__list-item">
+                <a href="#">Estimated Timeline and Workflow</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <nav class="sidebar sidebar--full">
+        <ul class="sidebar__list">
+            <li class="sidebar__list-item">
+                <a href="#">Product Information</a>
+            </li>
+            <li class="sidebar__list-item">
+                <a href="#">Terms and Conditions</a>
+            </li>
+            <li class="sidebar__list-item">
+                <a href="#">Client Requirements and Responsibilites</a>
+            </li>
+            <li class="sidebar__list-item">
+                <a href="#">Estimated Timeline and Workflow</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <nav id="submenu" class="submenu">
+        <h5 id="submenu__title" class="submenu__title">
+            Product Details
+        </h5>
+        
+        <ul id="submenu__list" class="submenu__list">
+            <li class="submenu__list-item">
+                <a href="#">Simple</a>
+            </li>
+            <li class="submenu__list-item">
+                <a href="#">Simple Plus</a>
+            </li>
+            <li class="submenu__list-item">
+                <a href="#">Standard</a>
+            </li>
+            <li class="submenu__list-item">
+                <a href="#">Standard Plus</a>
+            </li>
+            <li class="submenu__list-item">
+                <a href="#">Premium</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <a href="javascript:void(0)" id="sidebarBtn" data-state="closed" class="sidebarBtn">&#8250;</a>
+    
+    
+    <section class="body">
+        <a class="u-offset-anchor" id="info-product-section"></a>
+        <h2 class="body__section-heading">
+            Product Information
+        </h2>
+        
+        <a class="u-offset-anchor" id="info-simple"></a>
+        <h3 class="body__sub-heading">
+            Simple
+        </h3>
+        
+        <p class="body__body-paragrph">
+            The Simple Tier is a single page website containing all the content the client
+            wishes to be displayed. The page will be broken into multiple sections with a navigation
+            menu that will scroll the view window to the selected section. The page can also include a
+            working contact form that is linked to the client email address at no additional fee. The contact
+            form will have unlimited submisions and there will be NO additional charges per submision.
+        </p>
+        <p class="body__body-paragrph">
+            The base price for the Simple Tier covers only the webpage and contact form. Any additional 
+            functionality, widgets, or features can be added at an additional fee, or if it is more
+            practical, the client may choose to upgrade to the next product tier. 
+        </p>
+        <p class="body__body-paragrph">      
+            On it's own, the Simple Tier does not allow the client to edit any content from the browser.
+            All edits will need to either be made by the client in the source code or submited to J3L
+            so they may be added. See <a href="#info-maintenance" class="u-underlined-anchor">maintenance plans</a> for further information.
+        </p>
+        <p class="body__body-paragrph">
+            If the client does wish to have the ability to edit page content, the <a href="#info-CMS" class="u-underlined-anchor">Content Management service</a> can be added
+            for a one time fee of $250. 
+        </p>
+        <p class="body__body-paragrph">    
+            As with all product tiers, the client will be responsible for supplying all <a href="#info-creation" class="u-underlined-anchor">webpage content,</a> purchasing and paying for
+            the requested <a href="#info-domain" class="u-underlined-anchor">domain name</a> as well as the monthly <a href="#info-hosting" class="u-underlined-anchor">web hosting fees.</a> 
+        </p>
+        
+        <a class="u-offset-anchor" id="info-standard"></a>
+        <h3 class="body__sub-heading">
+            Standard
+        </h3>
+        
+        <p class="body__body-paragrph">
+            The Standard Tier allows for up to five pages to rendered, offering the opportunity to
+            include more content than is feasable in a single page website. There will be a fully responsive
+            navigation menu easily accessable from each page allowing the user to navigate from page to page. If necessary, additional 
+            pages may be added at a price agreed upon by both the client and J3L. 
+        </p>
+        <p class="body__body-paragrph">
+            The base price for the Standard Tier covers the five page website and up to two seperate
+            contact forms. The contact forms will be synced to the client email and will offer unlimited submissions
+            with no additional cost per submission. Any additional pages, widgets, funtionality or features can be added for an additional
+            fee determined by the scope and size of the request. If the requested functionality exceeds that of
+            a standard website, the client may wish to upgrade to the <a href="#info-premium" class="u-underlined-anchor">Premium Tier.</a>
+        </p>
+        <p class="body__body-paragrph"> 
+            The Standard Tier does not offer the ability for the client to edit content in the browser. All edits 
+            must be made in the source code by the client or submitted to J3L for either a one-time fee or as part of our <a href="#info-maintenance" class="u-underlined-anchor">Maintenance Plan.</a>
+        </p>
+        <p class="body__body-paragrph">
+            If the client does wish to have the ability to edit content, the <a href="#info-CMS" class="u-underlined-anchor">Content Management service</a> is
+            available for a one-time fee of $500. This service is more expensive for the Standard Tier vs. the Simple Tier
+            due to the larger size and more complex nature of the Standard Tier.
+        </p>
+        <p class="body__body-paragrph">    
+            As with all product tiers, the client will be responsible for supplying all <a href="#info-creation" class="u-underlined-anchor">webpage content,</a> purchasing and paying for
+            the requested <a href="#info-domain" class="u-underlined-anchor">domain name</a> as well as the monthly <a href="#info-hosting" class="u-underlined-anchor">web hosting fees.</a> 
+        </p>
+        
+        <a class="u-offset-anchor" id="info-premium"></a>
+        <h3 class="body__sub-heading">
+            Premium
+        </h3>
+        
+        <p class="body__body-paragrph">
+            The Premium Tier can encompass two types of websites. Websites that require extensive additional
+            functionality for the client that exceeds the scope of the standard tier, including a large amount of or particularly complicated
+            custom widgets, specific database queries to achieve a desired user experience, large amounts of 
+            data to be dealt with, and custom uploading of large files including documents and images, will fall under the umbrella of the 
+            premium tier.
+        </p>
+        <p class="body__body-paragrph">
+            The second type of Premium website would be a fully functional application. J3L can develop a custom
+            implementation of a clients web app for a variety of purposes, including but not limited to: 
+            Ecommerce stores, paid subscription services (i.e. premium blog or vlog platforms), small-scale social media 
+            platforms and business management applications.
+        </p>
+        <p class="body__body-paragrph">   
+            Pricing starts at $3500 but will be scaled based upon the size and requirements of the project,
+            and the estimated completion timeframe. For larger projects, a scheduled, multiple payment plan may
+            be required over the course of development. For large scale projects that may require in-depth and
+            continual maintenance, or have the potential to generate continuous revenue, recuring
+            fees may be required at either a flat or percentage-based rate, as agreed to by both the client and J3L.
+        </p>
+        <p class="body__body-paragrph">    
+            As with all product tiers, the client will be responsible for supplying all <a href="#info-creation" class="u-underlined-anchor">webpage content,</a> purchasing and paying for
+            the requested <a href="#info-domain" class="u-underlined-anchor">domain name</a> as well as the monthly <a href="#info-hosting" class="u-underlined-anchor">web hosting fees.</a> 
+        </p>
+    </section>
+    
+    <section class="body">
+        <a class="u-offset-anchor" id="info-add-ons"></a>
+        <h2 class="body__section-heading">
+            Additional Services
+        </h2>
+        
+        <a class="u-offset-anchor" id="info-CMS"></a>
+        <h3 class="body__sub-heading">
+            Content Management Services
+        </h3>
+        
+        <p class="body__body-paragrph">
+            J3L's Content Management service is designed with a focus on intuitivness and ease of use.
+            It allows the client to easily make changes to page text with the click of a button. Using the 
+            latest web technologies, this service can be expanded to allow for the client to create and update various
+            features, events, products or services right from the website without having to learn any complicated programming skills. 
+        </p>
+        <p class="body__body-paragrph">
+            This service is provided via a one time fee of $250 as an add on to the Simple Tier, or a one time fee of $500
+            as an add on to the Standard Tier. For any Premium Tier products or custom built applications, 
+            this functionality is included at no additional cost.
+        </p>
+        
+        <a class="u-offset-anchor" id="info-maintenance"></a>
+        <h3 class="body__sub-heading">
+            Maintenance Plans
+        </h3>
+        
+        <p class="body__body-paragrph">      
+            Morbi quis ornare sapien, pulvinar pharetra metus. Suspendisse in nisl ac nibh porttitor placerat vestibulum ac sem. Morbi sit amet orci fermentum, placerat neque in, auctor lacus. Quisque mattis nisl nunc, hendrerit tincidunt lacus pharetra sed. Maecenas rutrum nunc sem, et feugiat est ullamcorper vel.
+        </p>
+        <p class="body__body-paragrph">
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec neque magna, euismod et sapien condimentum, ullamcorper tincidunt sapien. Integer pharetra purus sit amet ligula eleifend, non pretium lorem dapibus. Integer varius metus quis ex fringilla, quis consectetur sem aliquam.
+        </p>
+        <p class="body__body-paragrph">    
+            Nunc venenatis egestas sapien ut lobortis. Vestibulum id tempor sapien, sed semper diam.  Pellentesque venenatis turpis id pellentesque pretium. Nam porttitor, orci vitae volutpat aliquet, diam libero dignissim ligula, ut imperdiet arcu felis id lectus. Aliquam erat volutpat. Praesent ac neque vel mauris placerat rutrum. Aliquam interdum augue vel felis elementum fringilla.    
+        </p>
+    </section>
+    
+    <section class="body">
+        <a class="u-offset-anchor" id="info-terms-section"></a>
+        <h2 class="body__section-heading">
+            Terms and Conditions
+        </h2>
+        
+        <a class="u-offset-anchor" id="info-restrictions"></a>
+        <h3 class="body__sub-heading">
+            Content Restrictions
+        </h3>
+        
+        <p class="body__body-paragrph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sodales sapien. Nulla fermentum id orci ut luctus. Phasellus congue est ut tortor suscipit lacinia. Curabitur sed felis commodo orci tristique iaculis at ut ante. Cras in erat libero. Nam rhoncus elementum nulla, ut accumsan tortor dapibus et.
+        </p>
+        <p class="body__body-paragrph">
+            Curabitur imperdiet porttitor mattis. In mattis tortor quis nunc semper, ac tincidunt mauris sollicitudin. Aenean dapibus enim odio, eu dictum tellus ultricies ut. In hac habitasse platea dictumst. Proin ac dui at leo varius interdum. Donec ultricies luctus sapien euismod ultricies. Proin luctus commodo mi quis facilisis.
+        </p>
+        
+        <a class="u-offset-anchor" id="info-single-business"></a>
+        <h3 class="body__sub-heading">
+            Single Business
+        </h3>
+        
+        <p class="body__body-paragrph">      
+            Morbi quis ornare sapien, pulvinar pharetra metus. Suspendisse in nisl ac nibh porttitor placerat vestibulum ac sem. Morbi sit amet orci fermentum, placerat neque in, auctor lacus. Quisque mattis nisl nunc, hendrerit tincidunt lacus pharetra sed. Maecenas rutrum nunc sem, et feugiat est ullamcorper vel.
+        </p>
+        <p class="body__body-paragrph">
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec neque magna, euismod et sapien condimentum, ullamcorper tincidunt sapien. Integer pharetra purus sit amet ligula eleifend, non pretium lorem dapibus. Integer varius metus quis ex fringilla, quis consectetur sem aliquam.
+        </p>
+        <p class="body__body-paragrph">    
+            Nunc venenatis egestas sapien ut lobortis. Vestibulum id tempor sapien, sed semper diam.  Pellentesque venenatis turpis id pellentesque pretium. Nam porttitor, orci vitae volutpat aliquet, diam libero dignissim ligula, ut imperdiet arcu felis id lectus. Aliquam erat volutpat. Praesent ac neque vel mauris placerat rutrum. Aliquam interdum augue vel felis elementum fringilla.    
+        </p>
+    </section>
+    
+    <section class="body">
+        <a class="u-offset-anchor" id="info-requirements-section"></a>
+        <h2 class="body__section-heading">
+            Client Requirements and Responsibilites
+        </h2>
+        
+        <a class="u-offset-anchor" id="info-creation"></a>
+        <h3 class="body__sub-heading">
+            Content Creation
+        </h3>
+        
+        <p class="body__body-paragrph">      
+            Morbi quis ornare sapien, pulvinar pharetra metus. Suspendisse in nisl ac nibh porttitor placerat vestibulum ac sem. Morbi sit amet orci fermentum, placerat neque in, auctor lacus. Quisque mattis nisl nunc, hendrerit tincidunt lacus pharetra sed. Maecenas rutrum nunc sem, et feugiat est ullamcorper vel.
+        </p>
+        <p class="body__body-paragrph">
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec neque magna, euismod et sapien condimentum, ullamcorper tincidunt sapien. Integer pharetra purus sit amet ligula eleifend, non pretium lorem dapibus. Integer varius metus quis ex fringilla, quis consectetur sem aliquam.
+        </p>
+        <p class="body__body-paragrph">    
+            Nunc venenatis egestas sapien ut lobortis. Vestibulum id tempor sapien, sed semper diam.  Pellentesque venenatis turpis id pellentesque pretium. Nam porttitor, orci vitae volutpat aliquet, diam libero dignissim ligula, ut imperdiet arcu felis id lectus. Aliquam erat volutpat. Praesent ac neque vel mauris placerat rutrum. Aliquam interdum augue vel felis elementum fringilla.    
+        </p>
+        
+        <a class="u-offset-anchor" id="info-domain"></a>
+        <h3 class="body__sub-heading">
+            Domain Name
+        </h3>
+        
+        <p class="body__body-paragrph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sodales sapien. Nulla fermentum id orci ut luctus. Phasellus congue est ut tortor suscipit lacinia. Curabitur sed felis commodo orci tristique iaculis at ut ante. Cras in erat libero. Nam rhoncus elementum nulla, ut accumsan tortor dapibus et.
+        </p>
+        <p class="body__body-paragrph">
+            Curabitur imperdiet porttitor mattis. In mattis tortor quis nunc semper, ac tincidunt mauris sollicitudin. Aenean dapibus enim odio, eu dictum tellus ultricies ut. In hac habitasse platea dictumst. Proin ac dui at leo varius interdum. Donec ultricies luctus sapien euismod ultricies. Proin luctus commodo mi quis facilisis.
+        </p>
+        
+        <a class="u-offset-anchor" id="info-hosting"></a>
+        <h3 class="body__sub-heading">
+            Hosting
+        </h3>
+        
+        <p class="body__body-paragrph">      
+            Morbi quis ornare sapien, pulvinar pharetra metus. Suspendisse in nisl ac nibh porttitor placerat vestibulum ac sem. Morbi sit amet orci fermentum, placerat neque in, auctor lacus. Quisque mattis nisl nunc, hendrerit tincidunt lacus pharetra sed. Maecenas rutrum nunc sem, et feugiat est ullamcorper vel.
+        </p>
+        <p class="body__body-paragrph">
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec neque magna, euismod et sapien condimentum, ullamcorper tincidunt sapien. Integer pharetra purus sit amet ligula eleifend, non pretium lorem dapibus. Integer varius metus quis ex fringilla, quis consectetur sem aliquam.
+        </p>
+        <p class="body__body-paragrph">    
+            Nunc venenatis egestas sapien ut lobortis. Vestibulum id tempor sapien, sed semper diam.  Pellentesque venenatis turpis id pellentesque pretium. Nam porttitor, orci vitae volutpat aliquet, diam libero dignissim ligula, ut imperdiet arcu felis id lectus. Aliquam erat volutpat. Praesent ac neque vel mauris placerat rutrum. Aliquam interdum augue vel felis elementum fringilla.    
+        </p>
+    </section>
+</div>
+
+<% include ./partials/footer %>

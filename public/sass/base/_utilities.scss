@@ -1,0 +1,112 @@
+.u-float-right {
+    float: right;
+    
+    @include respond(tab-port) {
+        float: none;
+    }
+}
+
+.u-float-left {
+    float: left;
+    
+    @include respond(tab-port) {
+        float: none;
+    }
+}
+
+.u-text-center {
+    text-align: center;
+}
+
+.u-absCenter {
+    @include absCenter
+}
+
+.u-absCenter-md {
+    @include absCenter
+    
+    @include respond(tab-port) {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+    }
+}
+
+.u-hide {
+    display: none;
+}
+
+.u-hide-md {
+    @include respond(tab-port) {
+        display: none;
+    }
+}
+
+.u-link {
+    text-decoration: none;
+    color: inherit;
+    
+    &:hover,
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+.u-show-md {
+   display: none;
+   @include respond(tab-port) {
+        display: block;
+    } 
+}
+
+.u-underlined {
+    padding-bottom: .2rem;
+    border-bottom: 1px solid black;
+}
+
+.u-block {
+    display: block;
+}
+
+.u-block-xsm {
+    @media only screen and (max-width: 450px) {
+        display: block;
+    }
+}
+
+.u-hide-xsm {
+     @media only screen and (max-width: 450px) {
+        display: none;
+    }
+}
+
+.u-bold {
+    font-weight: 500;
+}
+
+.u-pt {
+    padding-top: 2rem !important;
+}
+
+.u-offset-anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+.u-underlined-anchor {
+    color: inherit;
+}
+
+html.sr .u-load-hidden {
+    visibility: hidden;
+}
+
+.u-phone {
+    @media only screen and(min-width: 500px) {
+        text-decoration: none;
+        cursor: default;
+    }
+}
